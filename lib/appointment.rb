@@ -9,12 +9,6 @@ class Appointment
     @doctor = doctor
     @@all << self
   end
-    
-  def patient
-    Patient.all.select do |patient|
-      patient.appointments == self
-    end
-  end
   
   def self.all
     @@all
