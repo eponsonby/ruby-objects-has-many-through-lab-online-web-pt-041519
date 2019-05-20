@@ -28,6 +28,7 @@ class Patient
         doctors_array << appointment.doctor
       end
     end
+    return doctors_array
   end
   
 end
