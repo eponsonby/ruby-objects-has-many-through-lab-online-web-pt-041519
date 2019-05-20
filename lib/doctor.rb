@@ -29,7 +29,7 @@ class Doctor
        patients_array << appointment.patient
       end
     end
-    return patients_array 
+    return patients_array
   end
   
 end
