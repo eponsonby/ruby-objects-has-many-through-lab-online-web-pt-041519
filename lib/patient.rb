@@ -22,6 +22,13 @@ class Patient
   end
   
   def doctors
+    doctors_array = []
+    Appointment.all.select do |appointment|
+      if appointment.patient == self
+        doctors_array << appointment.doctor
+      end
+    end
+  end
 end
   
 end
